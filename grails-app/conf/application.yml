@@ -71,16 +71,16 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    dialect: org.hibernate.dialect.MySQL5InnoDBDialect #Added to work propperly
+    dialect: org.hibernate.dialect.MySQL8InnoDBDialect #Added to work propperly
     driverClassName: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 1995chad12
+    username: "root"
+    password: "1995chad12"
 
 environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:mysql://localhost/pdi-users;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE #No port needed
+            url: jdbc:mysql://localhost/pdi-users?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #No port needed | Timezone needs to be speciied.
     test:
         dataSource:
             dbCreate: update

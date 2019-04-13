@@ -4,7 +4,7 @@ class User {
     String user_name
     String pwd
     String user_nick
-    Int rol_idrol
+    Integer rol_idrol
 
     static constraints = {
     }

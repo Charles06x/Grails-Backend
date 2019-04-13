@@ -1,4 +1,4 @@
-package grails.backend
+//package grails.backend
 
 class User {
     String user_name

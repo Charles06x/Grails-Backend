@@ -51,6 +51,7 @@ dependencies {
     runtime "org.glassfish.web:el-impl:2.1.2-b03"
     runtime "com.h2database:h2"
     runtime "org.apache.tomcat:tomcat-jdbc"
+    runtime "org.apache.tomcat.embed:tomcat-embed-logging-log4j" //
     runtime 'mysql:mysql-connector-java:8.0.11'  //Added to use a mysql database. ConnectorJ's version is 8.0.11
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.grails:grails-datastore-rest-client"

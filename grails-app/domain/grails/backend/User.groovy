@@ -1,10 +1,11 @@
-//package grails.backend
+package grails.backend
 
 class User {
-    String user_name
+    
+    String name
     String pwd
-    String user_nick
-    Integer rol_idrol
+    String code
+    Rol rol
 
     static constraints = {
     }

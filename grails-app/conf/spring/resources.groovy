@@ -1,5 +1,7 @@
 import grails.backend.UserPasswordEncoderListener
-// Place your Spring DSL code here
+import grails.backend.cors.CorsFilter
+
 beans = {
     userPasswordEncoderListener(UserPasswordEncoderListener)
+    corsFilter(CorsFilter)
 }

@@ -8,6 +8,7 @@ grails:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
             events: false
+
 info:
     app:
         name: '@info.app.name@'
@@ -74,7 +75,7 @@ dataSource:
     dialect: org.hibernate.dialect.MySQL8InnoDBDialect #Added to work propperly
     driverClassName: com.mysql.cj.jdbc.Driver
     username: "root"
-    password: "1995chad12"
+    password: "root"
 
 environments:
     development:

@@ -1,5 +1,6 @@
 package grails.backend
 
+<<<<<<< HEAD
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import grails.compiler.GrailsCompileStatic
@@ -21,6 +22,14 @@ class User implements Serializable {
     Set<Authority> getAuthorities() {
         (UserAuthority.findAllByUser(this) as List<UserAuthority>)*.authority as Set<Authority>
     }
+=======
+class User {
+    
+    String name
+    String pwd
+    String code
+    Rol rol
+>>>>>>> parent of 90b4a7f... Convert domains into rest resources, and allow publicKeyRetrieval.
 
     static constraints = {
         password nullable: false, blank: false, password: true
